@@ -1,64 +1,64 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-  }
-  
-  body, ul {
+}
+
+body,
+ul {
     margin: 0;
     padding: 0;
-   
-  }
+}
 
-
-
-  body {
+body {
     border-top: 8px solid #f2ac04;
-  }
+}
 
-  a {
+a {
     text-decoration: none;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-weight: lighter;
 }
 
 li {
     list-style: none;
 }
 
-  .gray-text {
+.gray-text {
     color: #ababab;
-  }
+}
 
- 
-  
-  #container {
+#container {
     max-width: 1000px;
     margin: auto;
-  }
-  
-  header, #header-top {
+}
+
+header,
+#header-top {
     display: flex;
     flex-wrap: wrap;
-  }
+}
 
-  #header-top {
+#header-top {
     padding: 40px 0;
     width: 100%;
-  }
+}
 
-  #header-text {
+#header-text {
     padding-left: 25px;
-  }
+}
 
-  #header-text h4{
+#header-text h4 {
     color: #f2ac04;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: normal;
     margin: 0 0 18px 0;
-  }
+}
 
-   
-  
-  #logo {
+#logo {
     position: relative;
     width: 245px;
     align-items: center;
@@ -67,10 +67,10 @@ li {
     justify-content: flex-end;
     padding-right: 35px;
     border-right: 1px solid #cac8c5;
-  }
-  
-  #logo::before,
-  #logo::after {
+}
+
+#logo::before,
+#logo::after {
     content: "";
     height: 55px;
     width: 55px;
@@ -78,38 +78,189 @@ li {
     display: block;
     top: 13px;
     top: 0px;
-  }
-  
-  #logo::before {
+}
+
+#logo::before {
     background: #f8d277;
     position: absolute;
     left: 0;
-  }
-  
-  #logo::after {
+}
+
+#logo::after {
     background: #f2ac04;
     position: absolute;
     left: 15px;
-  }
-  
-  #header-menu {
+}
+
+#header-menu {
     width: 100%;
     border-top: 1px solid #ababab;
     border-bottom: 1px solid #ababab;
-  }
+}
 
-  #header-menu ul {
-      display: flex;
-      
-  }
+#header-menu ul {
+    display: flex;
+}
 
-  #header-menu ul li a {
-      display: block;
-      padding: 15px 35px;
-      color: #ababab;
-      text-transform: uppercase;
-  }
+#header-menu ul li a {
+    display: block;
+    padding: 15px 35px;
+    color: #ababab;
+    text-transform: uppercase;
+}
 
-  #header-menu ul li:first-child a {
-      padding-left: 0;
-  }
+#header-menu ul li:first-child a {
+    padding-left: 0;
+}
+
+#banners {
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+
+#banners > div {
+    width: 50%;
+}
+
+#banners > div img{
+    max-width: 100%;
+}
+
+#banners .bn-left .wrap{
+    margin-right: 15px;
+    border: 1px solid gray;
+}
+
+#banners .bn-right .wrap{
+    margin-left: 15px;
+     
+}
+
+#banners .bn-right .img-block {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+}
+
+
+
+#banners  i {
+    color: #f2ac04;
+    font-size: 26px;
+}
+
+
+#banners .bn-right p{
+    border-top: 1px solid #000;
+}
+
+#banners .bn-right h3 {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-size: 2vw;
+    color: #fff;
+    font-weight: normal;
+    margin: 0;
+}
+
+#banners .slide {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 0 0 0;
+    border-top: 1px solid grey;
+    padding: 30px 0 0 0; 
+}
+
+#content .item {
+    width: 33.33%;
+   
+}
+
+#content .item h2 {
+    margin: 0 0 30px 0;
+}
+
+#content .about, #content .contacts {
+    padding: 0 40px; 
+
+}
+
+ 
+#content .about {
+    border-left: 1px solid grey ;
+    border-right: 1px solid grey ;
+
+}
+.news {
+    padding-right: 10px;
+}
+
+.news .block-news {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px dashed grey;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.news .block-news h4 {
+    margin: 0 0 5px 0
+}
+
+.news .date-news span {
+    color: #f2ac04;
+    font-weight: bold;
+    width: 100%;
+    font-size: 22px;
+    
+}
+
+.news .date-news {
+    border-right: 1px solid grey;
+    padding-right: 10px;
+    text-align: center;
+    margin-right:10px;
+}
+
+.about {
+    line-height: 24px;
+}
+
+.contacts > div {
+    border-bottom: 1px dashed grey;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts > div:last-child {
+    border: none;
+}
+
+
+.contacts i {
+    font-size: 26px;
+    width: 15%;
+    text-align: center;
+    color: lightgray;
+}
+
+.contacts span {
+    width: 70%;
+    color: gray;
+}
+
+.contacts > div:first-of-type span, .contacts > div:first-of-type + div span {
+    font-weight: bold;
+}
+
